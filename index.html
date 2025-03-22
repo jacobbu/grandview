@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amplify Authentication</title>
+
+    <!-- Load AWS Amplify from CDN -->
+    <script src="https://unpkg.com/aws-amplify@4.3.4/dist/aws-amplify.min.js"></script>
+</head>
+<body>
+    <h1>Amplify Authentication Test</h1>
+
+    <button onclick="checkAmplify()">Check Amplify Status</button>
+
+    <script>
+        // Simple test to verify if Amplify is loaded correctly
+        function checkAmplify() {
+            if (typeof Amplify !== 'undefined') {
+                console.log("Amplify is loaded!");
+                alert("Amplify is successfully loaded.");
+            } else {
+                console.log("Amplify is NOT loaded.");
+                alert("Amplify is not loaded.");
+            }
+        }
+    </script>
+</body>
+</html>
